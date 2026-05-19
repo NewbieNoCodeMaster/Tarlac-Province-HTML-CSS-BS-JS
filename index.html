@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Tarlac!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="styles/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-tarlac-blue shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="#">
+                <img src="images/tarlac-logo.png" alt="Tarlac Logo" style="height: 75px; width: auto;" class="me-3">
+                Tarlac Tourism
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item mx-lg-2"><a class="nav-link active fw-bold" href="#">Home</a></li>
+                    <li class="nav-item mx-lg-2"><a class="nav-link" href="about-tarlac.html">About Tarlac</a></li>
+                    <li class="nav-item mx-lg-2"><a class="nav-link" href="tourist-destinations.html">Tourist Destinations</a></li>
+                    <li class="nav-item mx-lg-2"><a class="nav-link" href="festivals-culture.html">Festivals & Culture</a></li>
+                    <li class="nav-item mx-lg-2"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item mx-lg-2"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-3 fw-bold text-tarlac-blue mb-3">Welcome to Tarlac</h1>
+                    <p class="lead text-muted mb-4">Discover the vibrant heart of Central Luzon. From breathtaking volcanic trails and pristine riverbeds to rich historical sanctuaries and extraordinary culinary experiences, your ultimate countryside adventure begins here.</p>
+                    <a href="tourist-destinations.html" class="btn btn-tarlac btn-lg rounded-pill shadow-sm">Explore Destinations</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/tarlac-hero.jpg" alt="Beautiful Tarlac Landscape" class="img-fluid rounded-4 shadow-lg w-100">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-tarlac-blue">Featured Categories</h2>
+                <p class="text-muted">Explore the diverse experiences waiting for you across the province</p>
+                
+                <div class="d-flex justify-content-center mt-4">
+                    <ul class="nav nav-pills nav-spots justify-content-center" id="spotCategories" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-category="all" type="button"><i class="bi bi-grid-fill me-1"></i> All Categories</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="beach" type="button"><i class="bi bi-sun-fill me-1"></i> Beach (Riverbanks)</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="mountain" type="button"><i class="bi bi-tree-fill me-1"></i> Mountain</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="waterfall" type="button"><i class="bi bi-water me-1"></i> Waterfall</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="historical" type="button"><i class="bi bi-bank me-1"></i> Historical Site</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="island" type="button"><i class="bi bi-tsunami me-1"></i> Island (Water Parks)</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="food" type="button"><i class="bi bi-egg-fried me-1"></i> Food Destination</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="adventure" type="button"><i class="bi bi-rocket-takeoff-fill me-1"></i> Adventure</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row g-4" id="spotsContainer">
+                <div class="col-md-4" data-category="beach">
+                    <div class="card h-100 shadow-sm spot-card">
+                        <img src="images/saipan-beach.jpg" class="card-img-top" alt="Saipan River Beach">
+                        <div class="card-body">
+                            <span class="badge badge-category mb-2 px-2 py-1 rounded">Beach Alternative</span>
+                            <h5 class="card-title fw-bold text-tarlac-blue">Saipan Beach</h5>
+                            <p class="card-text text-muted mb-0">Experience a unique local getaway at Saipan River beach in San Jose. Relax on rocky banks alongside crystal-clear flowing freshwaters.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-category="mountain">
+                    <div class="card h-100 shadow-sm spot-card">
+                        <img src="images/monasterio-tarlac.jpg" class="card-img-top" alt="Monasterio de Tarlac Cross">
+                        <div class="card-body">
+                            <span class="badge badge-category mb-2 px-2 py-1 rounded">Mountain</span>
+                            <h5 class="card-title fw-bold text-tarlac-blue">Monasterio de Tarlac</h5>
+                            <p class="card-text text-muted mb-0">Perched atop Mt. Resurrection in San Jose, this popular spiritual mountain retreat houses a colossal 30-foot statue of the Risen Christ.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-category="waterfall">
+                    <div class="card h-100 shadow-sm spot-card">
+                        <img src="images/canding-falls.jpg" class="card-img-top" alt="Canding Falls View">
+                        <div class="card-body">
+                            <span class="badge badge-category mb-2 px-2 py-1 rounded">Waterfall</span>
+                            <h5 class="card-title fw-bold text-tarlac-blue">Canding Falls</h5>
+                            <p class="card-text text-muted mb-0">Hidden in San Clemente, Canding Falls offers an amazing jungle oasis ideal for adventurous cliff diving, cold water swimming, and outdoor picnicking.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-category="historical">
+                    <div class="card h-100 shadow-sm spot-card">
+                        <img src="images/capas-shrine.jpg" class="card-img-top" alt="Capas National Shrine Obelisk">
+                        <div class="card-body">
+                            <span class="badge badge-category mb-2 px-2 py-1 rounded">Historical Site</span>
+                            <h5 class="card-title fw-bold text-tarlac-blue">Capas National Shrine</h5>
+                            <p class="card-text text-muted mb-0">A solemn historical sanctuary dedicated to the brave Filipino and American soldiers who endured the brutal Bataan Death March during WWII.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-category="island">
+                    <div class="card h-100 shadow-sm spot-card">
+                        <img src="images/isdaan-village.jpg" class="card-img-top" alt="Isdaan Village Park">
+                        <div class="card-body">
+                            <span class="badge badge-category mb-2 px-2 py-1 rounded">Island Environment</span>
+                            <h5 class="card-title fw-bold text-tarlac-blue">Isdaan Village</h5>
+                            <p class="card-text text-muted mb-0">A vibrant floating theme-park restaurant in Gerona. Features beautiful structural islands, giant cultural statues, and fun boat rides.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-category="food">
+                    <div class="card h-100 shadow-sm spot-card">
+                        <img src="images/tarlac-food.jpg" class="card-img-top" alt="Authentic Tarlac Food">
+                        <div class="card-body">
+                            <span class="badge badge-category mb-2 px-2 py-1 rounded">Food Destination</span>
+                            <h5 class="card-title fw-bold text-tarlac-blue">Camiling Chicharon Hub</h5>
+                            <p class="card-text text-muted mb-0">Taste the best culinary heritage of Tarlac! Famous for its signature crispy, deep-fried pork Chicharon Camiling and native rice cakes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-category="adventure">
+                    <div class="card h-100 shadow-sm spot-card">
+                        <img src="images/pinatubo-trek.jpg" class="card-img-top" alt="Mount Pinatubo 4x4 Offroad Trek">
+                        <div class="card-body">
+                            <span class="badge badge-category mb-2 px-2 py-1 rounded">Adventure</span>
+                            <h5 class="card-title fw-bold text-tarlac-blue">Mount Pinatubo 4x4 Trail</h5>
+                            <p class="card-text text-muted mb-0">Hop on a rugged 4x4 vehicle across volcanic landscapes, trailing through lahar canyons leading up to the epic Mount Pinatubo crater lake.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-category="adventure">
+                    <div class="card h-100 shadow-sm spot-card">
+                        <img src="images/bulsa-kayak.jpg" class="card-img-top" alt="Bulsa River Kayaking Action">
+                        <div class="card-body">
+                            <span class="badge badge-category mb-2 px-2 py-1 rounded">Adventure</span>
+                            <h5 class="card-title fw-bold text-tarlac-blue">Bulsa River Kayaking</h5>
+                            <p class="card-text text-muted mb-0">Brace yourself for action! Guided eco-tours organize thrilling rapid white-water kayaking courses along the pristine canyons of San Jose.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-category="adventure">
+                    <div class="card h-100 shadow-sm spot-card">
+                        <img src="images/tarlac-circuit-hill.jpg" class="card-img-top" alt="Tarlac Recreation Park Sports">
+                        <div class="card-body">
+                            <span class="badge badge-category mb-2 px-2 py-1 rounded">Adventure</span>
+                            <h5 class="card-title fw-bold text-tarlac-blue">Tarlac Recreation Park</h5>
+                            <p class="card-text text-muted mb-0">A massive 78-hectare complex outfitted for extreme ATV trail drives, mountain biking routes, dune buggy rentals, and open campsites.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script/home.js"></script>
+</body>
+</html>
